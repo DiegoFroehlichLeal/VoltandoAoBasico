@@ -1,2 +1,16 @@
-const arrayOne = [87, 12, 53, 29, 64, 41, 5, 76, 16, 36, 95, 56, 71, 6, 80, 13, 3, 77, 46, 59, 40, 78, 33, 7, 22, 61, 81, 23, 30, 58, 91, 83, 18, 89, 20, 55, 39, 14, 86, 10, 28, 8, 52, 19, 35, 96, 24, 43, 69, 26, 74, 50, 98, 32, 65, 94, 73, 11, 67, 25, 70, 37, 75, 79, 66, 31, 97, 9, 47, 44, 38, 63, 72, 57, 48, 62, 15, 2, 68, 21, 85, 27, 84, 4, 60, 45, 34, 93, 82, 1, 49, 54, 17, 90, 88, 51, 92, 99, 16, 3, 9];
+const prompt = require("prompt-sync")();
 
+let qtdNumeros = parseInt(prompt('Digite a quantidade de números para o cálculo da média:'), 10);
+let contador = 0; // variavel contador e igual a qtd numeros
+let soma = 0;
+
+
+while(contador < qtdNumeros) { // enquannto o contador for maior que 0 execute o loop.
+    let numero = parseInt(prompt('Digite o numero:'));
+    soma += numero
+    contador++;
+}
+
+let media = soma / qtdNumeros;
+
+console.log(`A media do é ${media}`);
