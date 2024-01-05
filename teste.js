@@ -14,3 +14,4 @@ while(contador < qtdNumeros) { // enquannto o contador for maior que 0 execute o
 let media = soma / qtdNumeros;
 
 console.log(`A media do é ${media}`);
+
